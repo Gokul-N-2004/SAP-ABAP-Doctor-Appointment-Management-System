@@ -1,0 +1,26 @@
+unmanaged implementation in class ZBP_DOCTOR301 unique;
+strict ( 1 );
+
+define behavior for ZI_DOCTOR301 alias Doctor
+lock master
+authorization master ( instance )
+etag master DoctorId
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) DoctorId;
+  field ( mandatory ) DoctorName, Specialization, Phone;
+
+  mapping for ydoctor301
+  {
+    DoctorId       = doctor_id;
+    DoctorName     = doctor_name;
+    Specialization = specialization;
+    Phone          = phone;
+    Experience     = experience;
+    JoiningDate    = joining_date;
+    SuccessCases   = success_cases;
+  }
+}

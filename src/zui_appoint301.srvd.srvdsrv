@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition for Doctor Appointment'
+define service ZUI_APPOINT301 {
+  expose ZC_APPOINT301 as Appointment;
+  expose ZC_DOCTOR301  as Doctor;
+  expose ZC_PATIENT301 as Patient;
+}

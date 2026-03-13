@@ -1,0 +1,12 @@
+projection;
+strict ( 1 );
+
+define behavior for ZC_APPOINT301 alias Appointment
+{
+  use create;
+  use update;
+  use delete;
+
+  use action MarkVisited;
+  use action MarkCancelled;
+}

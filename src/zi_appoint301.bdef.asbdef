@@ -1,0 +1,31 @@
+unmanaged implementation in class ZBP_APPOINT301 unique;
+strict ( 1 );
+
+define behavior for ZI_APPOINT301 alias Appointment
+lock master
+authorization master ( instance )
+etag master AppointmentDate
+{
+  create;
+  update;
+  delete;
+
+  action MarkVisited   result [1] $self;
+  action MarkCancelled result [1] $self;
+
+  field ( readonly )  AppointmentId, StatusCriticality, RowHighlight;
+  field ( mandatory ) PatientId, DoctorId, DoctorName, Specialization,
+                      AppointmentDate, AppointmentTime;
+
+  mapping for yappoint301
+  {
+    AppointmentId   = appoint_id;
+    PatientId       = patient_id;
+    DoctorId        = doctor_id;
+    DoctorName      = doctor_name;
+    Specialization  = specialization;
+    AppointmentDate = appoint_date;
+    AppointmentTime = appoint_time;
+    Status          = status;
+  }
+}

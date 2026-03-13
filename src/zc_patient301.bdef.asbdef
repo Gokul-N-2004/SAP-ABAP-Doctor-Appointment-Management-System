@@ -1,0 +1,9 @@
+projection;
+strict ( 1 );
+
+define behavior for ZC_PATIENT301 alias Patient
+{
+  use create;
+  use update;
+  use delete;
+}

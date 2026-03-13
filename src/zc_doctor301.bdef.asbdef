@@ -1,0 +1,9 @@
+projection;
+strict ( 1 );
+
+define behavior for ZC_DOCTOR301 alias Doctor
+{
+  use create;
+  use update;
+  use delete;
+}

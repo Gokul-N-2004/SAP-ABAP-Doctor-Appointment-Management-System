@@ -1,0 +1,25 @@
+unmanaged implementation in class ZBP_PATIENT301 unique;
+strict ( 1 );
+
+define behavior for ZI_PATIENT301 alias Patient
+lock master
+authorization master ( instance )
+etag master PatientId
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) PatientId;
+  field ( mandatory ) PatientName, Age, Gender, Phone;
+
+  mapping for ypatient301
+  {
+    PatientId   = patient_id;
+    PatientName = patient_name;
+    Age         = age;
+    Gender      = gender;
+    Phone       = phone;
+    Address     = address;
+  }
+}
