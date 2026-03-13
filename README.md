@@ -8,7 +8,7 @@ The system automatically generates a unique **Appointment ID** and allows users 
 
 ---
 
-## Application UI
+## Appointment Output UI
 
 ### Appointment List UI
 Displays all scheduled appointments with doctor, patient, date, time, and status.
@@ -17,14 +17,14 @@ Displays all scheduled appointments with doctor, patient, date, time, and status
 
 ---
 
-### Appointment Creation UI
+### Application UI
 Allows users to create a new appointment by selecting patient, doctor, date, and time.
 
 ![Appointment Creation UI](https://github.com/user-attachments/assets/5d5566fd-b02d-4ba6-b26f-9ac5ccda8158)
 
 ---
 
-### Appointment Status Output UI
+### Appointment Creation UI
 Shows the final output where appointments can be marked as **Visited** or **Cancelled**.
 
 ![Appointment Output UI](https://github.com/user-attachments/assets/f9139d03-fede-463e-b0f5-fa8314cdefed)
